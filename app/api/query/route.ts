@@ -11,13 +11,54 @@ const index = new Index({
   token: process.env.UPSTASH_VECTOR_REST_TOKEN!,
 });
 
+// Simple in-memory rate limiting
+const rateLimitMap = new Map<string, { count: number; resetTime: number }>();
+
+const RATE_LIMIT = 30; // requests per window
+const RATE_LIMIT_WINDOW = 60000; // 1 minute in milliseconds
+const MAX_QUESTION_LENGTH = 500; // characters
+
+function checkRateLimit(ip: string): boolean {
+  const now = Date.now();
+  const userLimit = rateLimitMap.get(ip);
+
+  if (!userLimit || now > userLimit.resetTime) {
+    rateLimitMap.set(ip, { count: 1, resetTime: now + RATE_LIMIT_WINDOW });
+    return true;
+  }
+
+  if (userLimit.count >= RATE_LIMIT) {
+    return false;
+  }
+
+  userLimit.count++;
+  return true;
+}
+
 export async function POST(request: Request) {
   try {
+    // Rate limiting
+    const ip = request.headers.get('x-forwarded-for') || request.headers.get('x-real-ip') || 'unknown';
+    if (!checkRateLimit(ip)) {
+      return NextResponse.json(
+        { error: 'Too many requests. Please try again later.' },
+        { status: 429 }
+      );
+    }
+
     const { question } = await request.json();
 
     if (!question) {
       return NextResponse.json(
         { error: 'Question is required' },
+        { status: 400 }
+      );
+    }
+
+    // Input length validation
+    if (typeof question !== 'string' || question.length > MAX_QUESTION_LENGTH) {
+      return NextResponse.json(
+        { error: `Question must be a string with maximum ${MAX_QUESTION_LENGTH} characters` },
         { status: 400 }
       );
     }
