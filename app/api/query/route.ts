@@ -66,12 +66,23 @@ export async function POST(request: Request) {
     // Query vector database
     const results = await index.query({
       data: question,
-      topK: 3,
+      topK: 10,
       includeMetadata: true,
-      filter: centre && centre !== 'all' ? `id GLOB '${centre}-*'` : undefined,
     });
 
-    if (!results || results.length === 0) {
+    console.log('All results count:', results?.length || 0);
+
+    // Filter results by centre on the client side since GLOB doesn't work
+    let filteredResults = results;
+    if (centre && centre !== 'all') {
+      filteredResults = results.filter((r: any) => r.id?.startsWith(`${centre}-`));
+      console.log(`Filtered to ${filteredResults.length} results for ${centre}`);
+    }
+
+    // Take top 3 after filtering
+    filteredResults = filteredResults.slice(0, 3);
+
+    if (!filteredResults || filteredResults.length === 0) {
       return NextResponse.json({
         answer: centre && centre !== 'all'
           ? `I don't have specific information about that for ${centre}.`
@@ -80,7 +91,7 @@ export async function POST(request: Request) {
     }
 
     // Extract relevant content
-    const context = results
+    const context = filteredResults
       .map((result: any) => {
         const metadata = result.metadata || {};
         const title = metadata.title || 'Information';
@@ -118,7 +129,7 @@ Provide a helpful, professional response:`,
 
     return NextResponse.json({
       answer,
-      sources: results.map((r: any) => r.metadata?.title).filter(Boolean),
+      sources: filteredResults.map((r: any) => r.metadata?.title).filter(Boolean),
     });
   } catch (error) {
     console.error('Error processing query:', error);

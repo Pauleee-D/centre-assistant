@@ -1,22 +1,67 @@
 [
   {
-    "id": "example-centre-1-facilities",
-    "title": "Centre Name - Facilities",
-    "content": "This centre offers a 25m swimming pool, gym with cardio and weights, sauna, steam room, and sports hall."
+    "id": "albanycreek-contact",
+    "title": "Albany Creek - Contact Information",
+    "content": "Albany Creek Leisure Centre contact details: Phone 07 3264 9900, Email albanycreek@belgravialeisure.com.au, Website https://albanycreeklc.com.au, Facebook page Albany Creek Leisure Centre & Health Club located in Albany Creek QLD."
   },
   {
-    "id": "example-centre-1-classes",
-    "title": "Centre Name - Classes",
-    "content": "Available classes: Yoga (Mon/Wed 6pm), Spin (Tue/Thu 7pm), Pilates (Fri 5pm), Aqua Aerobics (Sat 10am)."
+    "id": "auburnruth-contact",
+    "title": "Auburn Ruth - Contact Information",
+    "content": "Auburn Ruth Everest Recreation Centre contact details: General contact email contact.auburn@belgravialeisure.com.au, For bookings contact Nathan Mayhew at Nmayhew@belgravialeisure.com.au, Located in Auburn NSW."
   },
   {
-    "id": "example-centre-1-hours",
-    "title": "Centre Name - Opening Hours",
-    "content": "Open Monday to Friday 6am-10pm, Weekends 7am-9pm."
+    "id": "albanycreek-hours",
+    "title": "Albany Creek - Opening Hours",
+    "content": "Albany Creek Leisure Centre Operating Hours Year Round: Monday to Thursday 5am to 8pm, Friday 5am to 8pm, Saturday 6am to 6pm, Sunday 7am to 5pm. Pools will close 15 minutes prior to centre closing hours. Public Holidays 10am to 4pm times may vary. Health Club has 24 hour access available. Playroom Hours Monday to Friday 9am to 12.15pm, Saturday 7am to 12pm."
   },
   {
-    "id": "example-centre-2-facilities",
-    "title": "Another Centre - Facilities",
-    "content": "This centre has a 50m Olympic pool, climbing wall, tennis courts, and a café."
+    "id": "albanycreek-memberships",
+    "title": "Albany Creek - Membership Prices and Options",
+    "content": "Albany Creek Health Club fully refurbished November 2024 with all new gym equipment. Direct Debit and Upfront Options available. Physio Insurance memberships available in one or three month duration refer customer to site for processing. 2025-2026 Membership Prices: Full Access Membership Adult $26.95 per week Concession $22.95 per week $45 joining fee includes Swimming Pools Access Group Fitness Classes land and water Health Club Access Begin optional 24 Hour Tag $39.95 once off optional Creche membership $5 weekly. Swimming Membership Adult $20.50 per week Concession $16.50 per week $20 joining fee includes Swimming Pools Access. Full Access FIFO ONLY $13.50 per week $45 joining fee includes Swimming Pools Access Group Fitness Classes Health Club Access optional 24 Hour Tag $39.95 once off optional Creche $5 weekly. Premium Membership $52.95 per week $45 joining fee includes Swimming Pools Access Group Fitness Classes Health Club Access Free Creche Membership Free 24 Hour Tag B-Active Functional Training BAFT Reformer Pilates existing 2024-2025 Premium members remain $49.95. DVA Full Access 12 month Membership $690 includes Swimming Pools Access Group Fitness Classes Health Club Access optional 24 Hour Tag $39.95 once off optional Creche $5 weekly refer to venue before purchasing. Aquatic Access 12 Months Adult $665.50 Concession $538.45 includes Swimming Pool Access. Full Access 1 month Traveller $125 includes Swimming Pools Access Group Fitness Classes Health Club Access optional 24 Hour Tag $39.95. Full Access 12 Months Adult $1235 Concession $1110 includes Swimming Pools Access Group Fitness Classes Health Club Access optional 24 Hour Tag $39.95 optional Creche $5 weekly. Childcare Membership $5 per week $10 joining fee for children aged up to 12 years only for Full Access Coaching Zone or Wellness membership joining fee does not apply if family member already a member. Direct Debit options for PT available refer customer to venue. If family member already a member joining fee does not apply as one joining fee per family charged."
+  },
+  {
+    "id": "albanycreek-fitnesspassport",
+    "title": "Albany Creek - Fitness Passport Information",
+    "content": "Albany Creek Fitness Passport members are not entitled to 24 hour access. They are not able to utilise the $5 weekly creche membership and will have to pay casually if booking in for creche. Fitness Passport members are entitled to a 30 minute induction with a trainer to show them around. However they do not get access to the BEGIN program offered to members. If they join the $36 premium Fitness Passport membership they are entitled to everything above with benefits being free creche free 24 hour tag and option to utilise BEGIN. Wellness Membership and Coaching Zone are not included for Fitness Passport. Fitness Passport members can purchase a reduced rate of $36 per week on top of their Fitness Passport Membership if they wish to avail Wellness Reformer and Coaching Zone membership."
+  },
+  {
+    "id": "albanycreek-concessions",
+    "title": "Albany Creek - Concessions and Discounts",
+    "content": "Albany Creek eligible concession cards include Health Care Card, Student Card, Seniors Card, Carer Card. Holders of a companion card can attend the gym with members free of charge and can observe monitor support classes free of charge. Companion card holders only pay concession rate if they are actively taking part in the class. Mount Barker Swim Club Members do not get charged a joining fee and need to join as members onsite to receive this discount. To process in AW apply the discount and use the Promo Code SWIMCLUB."
+  },
+  {
+    "id": "albanycreek-casualrates",
+    "title": "Albany Creek - Casual Rates 2025/2026",
+    "content": "Albany Creek Casual Swim Fees 2025/2026: Adult 16 years and over $6.65 casual entry or $179.70 for 30 visit pass, Child Entry $5.80 casual or $156.60 for 30 visit pass, Seniors Entry Aged and Disability $5.30 casual or $143.20 for 30 visit pass, Children Under 3 Years Free, Water Slide Pass $7.00 in addition to general entry fee, Family Pool Entry max 4 people including 1 Adult $21.05, Extra Family Member with Family Pool Entry $5.25, Non Swimmer Fee not including programs spectators $4.00. 30 visit passes have 6 month expiry. Casual Aqua Class 2025/2026: Adult Aqua Class $21.60 casual entry or $194.40 for 10 visit pass, Seniors Aqua Class $16.70 casual entry or $150.65 for 10 visit pass."
+  },
+  {
+    "id": "albanycreek-timetables",
+    "title": "Albany Creek - Class Timetables",
+    "content": "Albany Creek Leisure Centre class timetables and schedules: Group Fitness timetable available at https://www.albanycreeklc.com.au/getmedia/0abfe77b-1d9b-40d5-a09b-52a4a53bb8ae/group-exercise-timetable-summer-2024.pdf, Aqua Classes timetable available at https://www.albanycreeklc.com.au/getmedia/78cc9b53-c14b-49ca-8c85-2117a28f4a22/Aqua-Timetable-CD.pdf, Reformer Pilates timetable available at https://www.albanycreeklc.com.au/getmedia/16a88d21-beaf-4aa5-80aa-a1c33f98f42a/Reformer-Pilates-Timetable.pdf. For current class schedules times and availability please refer to these timetables or contact the centre."
+  },
+  {
+    "id": "albanycreek-reformerpilates",
+    "title": "Albany Creek - Reformer Pilates",
+    "content": "Albany Creek Leisure Centre and Health Club Reformer Pilates studio. Casual Reformer Pilates class $35. Using spring loaded resistance on a reformer bed instructors guide you through exercises designed to increase strength mobility coordination and balance. Studio has 10 reformer beds with wide selection of classes per week. Reformer pilates suited to all fitness levels and skills. Book via Active World membership app up to 3 days in advance. Premium Membership includes unlimited access to reformer pilates classes plus full access to gym B-Active Functional Training group fitness classes pools and playroom for $49.95 per week."
+  },
+  {
+    "id": "albanycreek-childcare",
+    "title": "Albany Creek - Childcare Playroom",
+    "content": "Albany Creek Leisure Centre Playroom provides members with informal adjunct care for children. Maximum 1 hour in care per child per day please book to avoid disappointment. All staff first aid trained and have blue cards. Playroom open for children 8 weeks old to 6 years of age. School children under 12 years accepted during school holidays. Cancellation of booking must be done via Active World app or contact center before 7am on the day. Nut Free Zone including almond meal almond milk hummus Nutella banana bread with nuts and mortadella containing pistachios. Session Times Monday to Friday 8am to 9am 9am to 10am 10am to 11am 11am to 12pm. Saturday 7am to 8am 8am to 9am 9am to 10am 10am to 11am. Limited numbers per time slot. To book childcare parent must complete Playroom Enrolment Booklet and attach to child member profile. Active World does not allow booking without this document attached."
+  },
+  {
+    "id": "albanycreek-splishsplash",
+    "title": "Albany Creek - Splish Splash Aqua Playgroup",
+    "content": "Albany Creek Splish Splash Aqua Playgroup for babies 3 to 6 months old. Designed for parents guardians and adults to participate with baby in water. Great for first time water experience. Babies can start from 3 months to splash and play getting familiar and comfortable in the water helping baby become familiar and explore. Use bath time at home to get baby used to being washed in water. After Splish Splash babies can progress into Learn to Swim program joining Starfish Level catering to infants 6 to 12 months to develop water confidence and swimming safety. Sessions twice a week with casual pay per session option. Download Active World app and pay online arrive 10 minutes early enjoy 30 minute session. Benefits include joint activity for parent and baby paced to suit different levels of ability low impact nutritious exercise. Parents and Babies Aquatic Fitness PABA Fit program also available for parents with babies 6 to 36 months. PABA Fit focuses on parent fitness and bonding paced to suit different ability levels. Low impact high energy fat burning aquatic workout with exercises designed with baby age and development in mind. Classes every Tuesday 11:15am and Friday 11:30am. Class cost $10 per session. Download Active World app and pay online."
+  },
+  {
+    "id": "albanycreek-slides",
+    "title": "Albany Creek - Water Slides",
+    "content": "Albany Creek Leisure Centre water slides only available on weekends and on public holidays."
+  },
+  {
+    "id": "albanycreek-activeworld",
+    "title": "Albany Creek - Active World App",
+    "content": "Albany Creek memberships powered by Active World app technology. App designed to improve communication and interaction between members and team. Become a member by joining or downloading app and using code ALBANY_CREEK. Self managed personal portal features: manage personal and billing details, manage account details, update payment details, check next payment date, buy new membership or visit pass, scan in using digital access card when you forget your pass, book into Group Fitness Classes, view upcoming classes, send and receive messages to Centre staff."
   }
 ]
