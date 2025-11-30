@@ -2,6 +2,7 @@
 
 import { useState, useMemo } from 'react';
 import centresData from '../data/centres-list.json';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 export default function Home() {
   const [question, setQuestion] = useState('');
@@ -45,7 +46,10 @@ export default function Home() {
 
   return (
     <main className="min-h-screen p-8 max-w-4xl mx-auto">
-      <h1 className="text-4xl font-bold mb-8">Leisure Centre Assistant</h1>
+      <div className="flex justify-between items-center mb-8">
+        <h1 className="text-4xl font-bold">Leisure Centre Assistant</h1>
+        <ThemeToggle />
+      </div>
 
       <form onSubmit={handleSubmit} className="space-y-4">
         <div className="flex gap-4">
@@ -60,7 +64,7 @@ export default function Home() {
                 setSelectedState(e.target.value);
                 setSelectedCentre('all'); // Reset centre selection when state changes
               }}
-              className="w-full p-3 border rounded-lg text-black"
+              className="w-full p-3 border rounded-lg bg-white dark:bg-gray-800 text-black dark:text-white dark:border-gray-700"
               disabled={loading}
             >
               <option value="all">All</option>
@@ -78,7 +82,7 @@ export default function Home() {
               id="centre"
               value={selectedCentre}
               onChange={(e) => setSelectedCentre(e.target.value)}
-              className="w-full p-3 border rounded-lg text-black"
+              className="w-full p-3 border rounded-lg bg-white dark:bg-gray-800 text-black dark:text-white dark:border-gray-700"
               disabled={loading}
             >
               <option value="all">All Centres</option>
@@ -101,11 +105,11 @@ export default function Home() {
             value={question}
             onChange={(e) => setQuestion(e.target.value)}
             placeholder="What time does the pool open?"
-            className="w-full p-3 border rounded-lg text-black"
+            className="w-full p-3 border rounded-lg bg-white dark:bg-gray-800 text-black dark:text-white dark:border-gray-700"
             disabled={loading}
           />
         </div>
-        
+
         <button
           type="submit"
           disabled={loading || !question}
@@ -116,9 +120,9 @@ export default function Home() {
       </form>
 
       {answer && (
-        <div className="mt-8 p-6 bg-gray-100 rounded-lg">
-          <h2 className="text-xl font-semibold mb-2 text-black">Answer:</h2>
-          <p className="text-gray-800">{answer}</p>
+        <div className="mt-8 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg border dark:border-gray-700">
+          <h2 className="text-xl font-semibold mb-2 text-black dark:text-white">Answer:</h2>
+          <p className="text-gray-800 dark:text-gray-200">{answer}</p>
         </div>
       )}
     </main>
