@@ -1,11 +1,26 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo } from 'react';
+import centresData from '../data/centres-list.json';
 
 export default function Home() {
   const [question, setQuestion] = useState('');
   const [answer, setAnswer] = useState('');
   const [loading, setLoading] = useState(false);
+  const [selectedState, setSelectedState] = useState('all');
+  const [selectedCentre, setSelectedCentre] = useState('all');
+
+  // Get unique states from centres data
+  const states = useMemo(() => {
+    const uniqueStates = [...new Set(centresData.map(c => c.state))].sort();
+    return uniqueStates.filter(s => s !== 'Unknown');
+  }, []);
+
+  // Filter centres by selected state
+  const filteredCentres = useMemo(() => {
+    if (selectedState === 'all') return centresData;
+    return centresData.filter(c => c.state === selectedState);
+  }, [selectedState]);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -16,7 +31,7 @@ export default function Home() {
       const response = await fetch('/api/query', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ question }),
+        body: JSON.stringify({ question, centre: selectedCentre }),
       });
 
       const data = await response.json();
@@ -31,8 +46,51 @@ export default function Home() {
   return (
     <main className="min-h-screen p-8 max-w-4xl mx-auto">
       <h1 className="text-4xl font-bold mb-8">Leisure Centre Assistant</h1>
-      
+
       <form onSubmit={handleSubmit} className="space-y-4">
+        <div className="flex gap-4">
+          <div className="w-1/4">
+            <label htmlFor="state" className="block text-lg font-medium mb-2">
+              State:
+            </label>
+            <select
+              id="state"
+              value={selectedState}
+              onChange={(e) => {
+                setSelectedState(e.target.value);
+                setSelectedCentre('all'); // Reset centre selection when state changes
+              }}
+              className="w-full p-3 border rounded-lg text-black"
+              disabled={loading}
+            >
+              <option value="all">All</option>
+              {states.map(state => (
+                <option key={state} value={state}>{state}</option>
+              ))}
+            </select>
+          </div>
+
+          <div className="flex-1">
+            <label htmlFor="centre" className="block text-lg font-medium mb-2">
+              Select Centre:
+            </label>
+            <select
+              id="centre"
+              value={selectedCentre}
+              onChange={(e) => setSelectedCentre(e.target.value)}
+              className="w-full p-3 border rounded-lg text-black"
+              disabled={loading}
+            >
+              <option value="all">All Centres</option>
+              {filteredCentres.map(centre => (
+                <option key={centre.id} value={centre.id}>
+                  {centre.name}
+                </option>
+              ))}
+            </select>
+          </div>
+        </div>
+
         <div>
           <label htmlFor="question" className="block text-lg font-medium mb-2">
             Ask a question:

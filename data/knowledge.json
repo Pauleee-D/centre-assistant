@@ -1,0 +1,22 @@
+[
+  {
+    "id": "example-centre-1-facilities",
+    "title": "Centre Name - Facilities",
+    "content": "This centre offers a 25m swimming pool, gym with cardio and weights, sauna, steam room, and sports hall."
+  },
+  {
+    "id": "example-centre-1-classes",
+    "title": "Centre Name - Classes",
+    "content": "Available classes: Yoga (Mon/Wed 6pm), Spin (Tue/Thu 7pm), Pilates (Fri 5pm), Aqua Aerobics (Sat 10am)."
+  },
+  {
+    "id": "example-centre-1-hours",
+    "title": "Centre Name - Opening Hours",
+    "content": "Open Monday to Friday 6am-10pm, Weekends 7am-9pm."
+  },
+  {
+    "id": "example-centre-2-facilities",
+    "title": "Another Centre - Facilities",
+    "content": "This centre has a 50m Olympic pool, climbing wall, tennis courts, and a café."
+  }
+]

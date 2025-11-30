@@ -46,7 +46,7 @@ export async function POST(request: Request) {
       );
     }
 
-    const { question } = await request.json();
+    const { question, centre } = await request.json();
 
     if (!question) {
       return NextResponse.json(
@@ -68,11 +68,14 @@ export async function POST(request: Request) {
       data: question,
       topK: 3,
       includeMetadata: true,
+      filter: centre && centre !== 'all' ? `id GLOB '${centre}-*'` : undefined,
     });
 
     if (!results || results.length === 0) {
       return NextResponse.json({
-        answer: "I don't have specific information about that topic.",
+        answer: centre && centre !== 'all'
+          ? `I don't have specific information about that for ${centre}.`
+          : "I don't have specific information about that topic.",
       });
     }
 

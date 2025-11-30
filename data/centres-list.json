@@ -1,0 +1,287 @@
+[
+  {
+    "id": "stromloleisurecentre",
+    "name": "Stromlo Leisure Centre",
+    "state": "ACT"
+  },
+  {
+    "id": "lakesideleisurecentre",
+    "name": "Lakeside Leisure Centre",
+    "state": "ACT"
+  },
+  {
+    "id": "gungahlinleisurecentre",
+    "name": "Gungahlin Leisure Centre",
+    "state": "ACT"
+  },
+  {
+    "id": "canberraolympicpcw",
+    "name": "Canberra Olympic PCW",
+    "state": "ACT"
+  },
+  {
+    "id": "erindale",
+    "name": "Erindale",
+    "state": "ACT"
+  },
+  {
+    "id": "dicksonpoolsseasonal",
+    "name": "Dickson Pools (seasonal)",
+    "state": "ACT"
+  },
+  {
+    "id": "michaelclarkereccentre",
+    "name": "Michael Clarke Rec Centre",
+    "state": "NSW"
+  },
+  {
+    "id": "greatlakesleisurecentre",
+    "name": "Great Lakes Leisure Centre",
+    "state": "NSW"
+  },
+  {
+    "id": "michaelwendenaquaticleisure",
+    "name": "Michael Wenden Aquatic Leisure",
+    "state": "NSW"
+  },
+  {
+    "id": "moreeartisanaquatic",
+    "name": "Moree Artisan Aquatic",
+    "state": "NSW"
+  },
+  {
+    "id": "singletonswimandgym",
+    "name": "Singleton Swim and Gym",
+    "state": "NSW"
+  },
+  {
+    "id": "manningmidcoasttaree",
+    "name": "Manning Midcoast (Taree)",
+    "state": "NSW"
+  },
+  {
+    "id": "tomareeseasonal",
+    "name": "Tomaree (seasonal)",
+    "state": "NSW"
+  },
+  {
+    "id": "centrepointblayney",
+    "name": "Centrepoint (Blayney)",
+    "state": "NSW"
+  },
+  {
+    "id": "whitlamleisurecentre",
+    "name": "Whitlam Leisure Centre",
+    "state": "NSW"
+  },
+  {
+    "id": "bathurstmanning",
+    "name": "Bathurst (Manning)",
+    "state": "NSW"
+  },
+  {
+    "id": "wollondilly",
+    "name": "Wollondilly",
+    "state": "NSW"
+  },
+  {
+    "id": "auburnruth",
+    "name": "Auburn Ruth",
+    "state": "NSW"
+  },
+  {
+    "id": "kurrikurriaquaticandfitnesscentre",
+    "name": "Kurri Kurri Aquatic and Fitness Centre",
+    "state": "NSW"
+  },
+  {
+    "id": "inverellaquaticcentre",
+    "name": "Inverell Aquatic Centre",
+    "state": "NSW"
+  },
+  {
+    "id": "swellpalmersonpool",
+    "name": "SWELL Palmerson Pool",
+    "state": "NT"
+  },
+  {
+    "id": "tehiku",
+    "name": "Te Hiku",
+    "state": "NZ"
+  },
+  {
+    "id": "albanycreek",
+    "name": "Albany Creek",
+    "state": "QLD"
+  },
+  {
+    "id": "fernyhillswimmingpcw",
+    "name": "Ferny Hill Swimming PCW",
+    "state": "QLD"
+  },
+  {
+    "id": "dalby",
+    "name": "Dalby",
+    "state": "QLD"
+  },
+  {
+    "id": "gympieaquaticcentre",
+    "name": "Gympie Aquatic Centre",
+    "state": "QLD"
+  },
+  {
+    "id": "chinchilla",
+    "name": "Chinchilla",
+    "state": "QLD"
+  },
+  {
+    "id": "burpengary",
+    "name": "Burpengary",
+    "state": "QLD"
+  },
+  {
+    "id": "wulandarecandconcentre",
+    "name": "Wulanda Rec and Con Centre",
+    "state": "SA"
+  },
+  {
+    "id": "summit",
+    "name": "Summit",
+    "state": "SA"
+  },
+  {
+    "id": "swirlsmithton",
+    "name": "SWIRL (Smithton)",
+    "state": "TAS"
+  },
+  {
+    "id": "splashdevonport",
+    "name": "Splash Devonport",
+    "state": "TAS"
+  },
+  {
+    "id": "tracthomastownreccentre",
+    "name": "TRAC (Thomastown Rec Centre)",
+    "state": "VIC"
+  },
+  {
+    "id": "watermarc",
+    "name": "Water Marc",
+    "state": "VIC"
+  },
+  {
+    "id": "whittleseaswimcentreseasonal",
+    "name": "Whittlesea Swim Centre (seasonal?)",
+    "state": "VIC"
+  },
+  {
+    "id": "bright",
+    "name": "Bright",
+    "state": "VIC"
+  },
+  {
+    "id": "ascotvale",
+    "name": "Ascot Vale",
+    "state": "VIC"
+  },
+  {
+    "id": "civicreserve",
+    "name": "Civic Reserve",
+    "state": "VIC"
+  },
+  {
+    "id": "yarracentre",
+    "name": "Yarra Centre",
+    "state": "VIC"
+  },
+  {
+    "id": "swanhill",
+    "name": "Swan Hill",
+    "state": "VIC"
+  },
+  {
+    "id": "keiloreastleisurecentre",
+    "name": "Keilor East Leisure Centre",
+    "state": "VIC"
+  },
+  {
+    "id": "somervillereccentre",
+    "name": "Somerville Rec Centre",
+    "state": "VIC"
+  },
+  {
+    "id": "jackhortmemorialpool",
+    "name": "Jack Hort Memorial Pool",
+    "state": "VIC"
+  },
+  {
+    "id": "robinvalerecandaquaticseasonal",
+    "name": "Robinvale Rec and Aquatic (seasonal)",
+    "state": "VIC"
+  },
+  {
+    "id": "portlandleisureandaquatic",
+    "name": "Portland Leisure and Aquatic",
+    "state": "VIC"
+  },
+  {
+    "id": "pelicanparkreccentre",
+    "name": "Pelican Park Rec Centre",
+    "state": "VIC"
+  },
+  {
+    "id": "millparkleisure",
+    "name": "Mill Park Leisure",
+    "state": "VIC"
+  },
+  {
+    "id": "monbulkaquaticcentre",
+    "name": "Monbulk Aquatic Centre",
+    "state": "VIC"
+  },
+  {
+    "id": "gurriwanyarrawellbeingcentre",
+    "name": "Gurri Wanyarra Wellbeing Centre",
+    "state": "VIC"
+  },
+  {
+    "id": "mansfieldswimmingpool",
+    "name": "Mansfield Swimming Pool",
+    "state": "VIC"
+  },
+  {
+    "id": "yarrambatparkgolfcourse",
+    "name": "Yarrambat Park Golf Course",
+    "state": "VIC"
+  },
+  {
+    "id": "higherstatemelbairport",
+    "name": "Higher State Melb Airport",
+    "state": "VIC"
+  },
+  {
+    "id": "knoxleisureworks",
+    "name": "Knox Leisureworks",
+    "state": "VIC"
+  },
+  {
+    "id": "dannyfrawley",
+    "name": "Danny Frawley",
+    "state": "VIC"
+  },
+  {
+    "id": "yawa",
+    "name": "YAWA",
+    "state": "VIC"
+  },
+  {
+    "id": "eastfremantlebactive",
+    "name": "East Fremantle (B active)",
+    "state": "WA"
+  },
+  {
+    "id": "loftusreccentre",
+    "name": "Loftus Rec Centre",
+    "state": "WA"
+  }
+]
