@@ -73,10 +73,13 @@ export async function POST(request: Request) {
     console.log('All results count:', results?.length || 0);
 
     // Filter results by centre on the client side since GLOB doesn't work
+    // Include both centre-specific AND general information
     let filteredResults = results;
     if (centre && centre !== 'all') {
-      filteredResults = results.filter((r: any) => r.id?.startsWith(`${centre}-`));
-      console.log(`Filtered to ${filteredResults.length} results for ${centre}`);
+      filteredResults = results.filter((r: any) =>
+        r.id?.startsWith(`${centre}-`) || r.id?.startsWith('general-')
+      );
+      console.log(`Filtered to ${filteredResults.length} results for ${centre} (including general info)`);
     }
 
     // Take top 3 after filtering

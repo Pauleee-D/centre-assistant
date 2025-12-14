@@ -8,7 +8,8 @@
     "start": "next start",
     "lint": "eslint",
     "add-knowledge": "tsx scripts/add-knowledge.ts",
-    "generate-centres": "tsx scripts/generate-centres.ts"
+    "generate-centres": "tsx scripts/generate-centres.ts",
+    "convert-tailored": "tsx scripts/convert-tailored-to-markdown.ts"
   },
   "dependencies": {
     "@upstash/vector": "^1.2.2",
