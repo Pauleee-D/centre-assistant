@@ -55,7 +55,7 @@ const centreWebsites: Record<string, string> = {
   tomareeseasonal: 'https://www.tomareeac.com.au/',
   watermarc: 'https://www.watermarcbanyule.com.au/',
   whittleseaswimcentreseasonal: 'https://www.watermarcbanyule.com.au/',
-  whitlamleisurecentre: 'https://www.whitlamleisure.com.au/',
+  whitlamleisurecentre: 'https://www.whitlamleisurecentre.com.au/',
   wollondilly: 'https://www.wclc.com.au/',
   wulandarecandconcentre: 'https://www.wulanda.com.au/',
   yawa: 'https://www.yawa.com.au/',
