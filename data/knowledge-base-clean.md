@@ -117,6 +117,12 @@ Bright Casual rates: Group Fitness - Bright Sports Centre Casual Group Exercise 
 ### Concessions and Discounts
 Bright Concessions and Discounts: Student card Medicare card Pensioners card Carers card Valid Concession Cards Thursday, December 01, 2022 1:14 PM
 
+### Aquatic Facilities
+Bright Aquatic Facilities: Bright Sports Centre offers a 17m indoor swimming pool specifically catering for beginner and intermediate swimmers. This dedicated pool allows tuition to all ages and abilities making learning to swim a great experience. The pool is designed for swimming lessons and aqua classes. Note: At times aqua classes are scheduled, please refer to the group fitness timetable for specific times when there will be limited public space available. Only one lane available for lap swimming during lessons, you'll likely share the lane. Appropriate swimwear must be worn at all times to maintain a clean safe and inviting environment. Clothing other than swimwear can create problems with water clarity pool disinfectant and water filtration systems.
+
+### Location and Access
+Bright Location and Access: Bright Sports Centre is located in the beautiful alpine town of Bright, less than five minutes from the town centre and hospital. The centre has a 17m indoor heated swimming pool, gymnasium, squash and other sporting facilities. Bright has three squash courts with equipment hire available, weight machines, dumbbells and other workout equipment, and bikes and treadmills in the cardio room. The Bright pool and gym is committed to providing accessible facilities to ensure everyone in the community can enjoy the centre. Accessibility features include ramps for easy pool access, an accessible change room, and designated accessible parking. If you have specific access requirements or need assistance planning your visit, please don't hesitate to call the centre for advice on 03 5755 1777. The team is happy to help ensure you have a comfortable and enjoyable experience.
+
 ---
 
 ## Bundaberg (coming soon)
