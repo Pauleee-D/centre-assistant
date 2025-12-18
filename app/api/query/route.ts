@@ -1,10 +1,9 @@
 import { NextResponse } from 'next/server';
 import { Index } from '@upstash/vector';
-import Groq from 'groq-sdk';
+import { GoogleGenerativeAI } from '@google/generative-ai';
 
-const groq = new Groq({
-  apiKey: process.env.GROQ_API_KEY!,
-});
+const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY!);
+const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
 
 const index = new Index({
   url: process.env.UPSTASH_VECTOR_REST_URL!,
@@ -103,32 +102,21 @@ export async function POST(request: Request) {
       })
       .join('\n\n');
 
-    // Generate response with Groq
-    const completion = await groq.chat.completions.create({
-      model: 'llama-3.1-8b-instant',
-      messages: [
-        {
-          role: 'system',
-          content:
-            'You are a helpful leisure centre assistant. Answer questions about facilities, memberships, classes, and policies in a friendly, professional manner.',
-        },
-        {
-          role: 'user',
-          content: `Based on the following information from our leisure centre knowledge base, answer the question.
+    // Generate response with Gemini
+    const prompt = `You are a helpful leisure centre assistant. Answer questions about facilities, memberships, classes, and policies in a friendly, professional manner.
+
+Based on the following information from our leisure centre knowledge base, answer the question.
 
 Knowledge Base Information:
 ${context}
 
 Question: ${question}
 
-Provide a helpful, professional response:`,
-        },
-      ],
-      temperature: 0.7,
-      max_tokens: 500,
-    });
+Provide a helpful, professional response:`;
 
-    const answer = completion.choices[0]?.message?.content || 'No response generated';
+    const result = await model.generateContent(prompt);
+    const response = await result.response;
+    const answer = response.text() || 'No response generated';
 
     return NextResponse.json({
       answer,
