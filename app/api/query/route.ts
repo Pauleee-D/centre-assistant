@@ -1,9 +1,10 @@
 import { NextResponse } from 'next/server';
 import { Index } from '@upstash/vector';
-import { GoogleGenerativeAI } from '@google/generative-ai';
+import Groq from 'groq-sdk';
 
-const genAI = new GoogleGenerativeAI(process.env.GOOGLE_API_KEY!);
-const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' });
+const groq = new Groq({
+  apiKey: process.env.GROQ_API_KEY!,
+});
 
 const index = new Index({
   url: process.env.UPSTASH_VECTOR_REST_URL!,
@@ -75,6 +76,7 @@ export async function POST(request: Request) {
     // Include both centre-specific AND general information
     let filteredResults = results;
     if (centre && centre !== 'all') {
+      console.log('First 5 result IDs:', results.slice(0, 5).map((r: any) => r.id));
       filteredResults = results.filter((r: any) =>
         r.id?.startsWith(`${centre}-`) || r.id?.startsWith('general-')
       );
@@ -102,21 +104,24 @@ export async function POST(request: Request) {
       })
       .join('\n\n');
 
-    // Generate response with Gemini
-    const prompt = `You are a helpful leisure centre assistant. Answer questions about facilities, memberships, classes, and policies in a friendly, professional manner.
+    // Generate response with Groq
+    const completion = await groq.chat.completions.create({
+      model: 'llama-3.1-8b-instant',
+      messages: [
+        {
+          role: 'system',
+          content: 'You are a helpful leisure centre assistant. Answer questions about facilities, memberships, classes, and policies in a friendly, professional manner.',
+        },
+        {
+          role: 'user',
+          content: `Based on the following information from our leisure centre knowledge base, answer the question.\n\nKnowledge Base Information:\n${context}\n\nQuestion: ${question}\n\nProvide a helpful, professional response:`,
+        },
+      ],
+      temperature: 0.7,
+      max_tokens: 500,
+    });
 
-Based on the following information from our leisure centre knowledge base, answer the question.
-
-Knowledge Base Information:
-${context}
-
-Question: ${question}
-
-Provide a helpful, professional response:`;
-
-    const result = await model.generateContent(prompt);
-    const response = await result.response;
-    const answer = response.text() || 'No response generated';
+    const answer = completion.choices[0]?.message?.content || 'No response generated';
 
     return NextResponse.json({
       answer,
