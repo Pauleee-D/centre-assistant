@@ -223,7 +223,7 @@ export default function Home() {
       {answer && (
         <div className="mt-8 p-6 bg-gray-100 dark:bg-gray-800 rounded-lg border dark:border-gray-700">
           <h2 className="text-xl font-semibold mb-2 text-black dark:text-white">Answer:</h2>
-          <p className="text-gray-800 dark:text-gray-200">{answer}</p>
+          <p className="text-gray-800 dark:text-gray-200 whitespace-pre-wrap">{answer}</p>
         </div>
       )}
     </main>
